@@ -28,3 +28,73 @@
      </div>
 </body>
 </html>
+//css code here
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#notepad{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 181, 22);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+#addBtn{
+    position:fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+.note{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    margin: 15px;
+    margin-top: 50px;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.nav h2{
+    font-family: sans-serif;
+}
+.nav .fa-pen-to-square{
+   position: absolute;
+   left: 125px;
+   top: 5px;
+   font-size: 23px;
+   color: rgb(0,255,247);
+}
+.nav .fa-floppy-disk,.fa-trash{
+      padding: 5px;
+      font-size: 18px;
+      cursor: pointer;
+}
+.nav .fa-trash{
+    color: #ff3c3c;
+}
+.note textarea{
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
